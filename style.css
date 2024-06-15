@@ -1,0 +1,104 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+   background: url('https://lh3.googleusercontent.com/p/AF1QipMJn-AVse7Rqg5LCG2XbQ0Rh2ep3pJQBDS3vYRM=s1360-w1360-h1020');
+  background-size: cover;
+}
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.name {
+   font-family: Arial, sans-serif;
+  font-weight: extrabold;
+  text-align: left;
+  color: rgb(78, 82, 79); 
+}
+.name-two {
+  font-family: Arial, sans-serif;
+  text-align: left;
+  font-size: 16px;
+  color: rgb(142, 148, 143);
+  line-height: 8px;  
+}
+input {
+    margin: 10px;
+    padding: 10px;
+    width: 210px;
+    align-items: left;
+}
+
+.password-container {
+    display: flex;
+    align-items: center;
+}
+
+#eraseButton {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ffc107;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#eraseButton:hover {
+    background-color: #e0a800;
+}
+
+#minesweeper {
+    display: grid;
+    grid-template-columns: repeat(8, 30px);
+    grid-gap: 2px;
+    margin-top: 20px;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #999;
+    font-size: 14px;
+}
+
+.cell.revealed {
+    background-color: #eee;
+    cursor: default;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#resetButton {
+    background-color: #dc3545;
+}
+
+#resetButton:hover {
+    background-color: #c82333;
+}
+
+.bomb {
+    width: 20px;
+    height: 20px;
+}
